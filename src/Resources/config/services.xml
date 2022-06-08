@@ -11,5 +11,10 @@
     <services>
         <service id="survos.foo" class="Survos\FooBundle\Service\FooService"  />
         <service id="Survos\FooBundle\Service\FooService" alias="survos.foo" />
+
+        <service id="Survos\FooBundle\Twig\FooTwigExtension" public="true" autowire="true">
+            <tag name="twig.extension" />
+        </service>
+
     </services>
 </container>
